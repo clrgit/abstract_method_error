@@ -1,8 +1,23 @@
 # AbstractMethod
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/abstract_method`. To experiment with that code, run `bin/console` for an interactive prompt.
+[Abstract
+methods](https://en.wikipedia.org/wiki/Method_(computer_programming)#Abstract_methods)
+are methods in base classes that lack an implementation but are supposed to be
+defined in sub classes. It is an error if an abstract method is ever called
 
-TODO: Delete this and the text above, and describe your gem
+## Usage
+
+AbstractMethod monkey-patches Kernel to add the method `abstract_method` that
+raise an AbstractMethodError exception when called. It is intendend to be used
+in one-line declarations of abstract methods:
+
+```ruby
+  require 'abstract_method'
+
+  class A
+    def method_to_be_defined_later = abstract_method
+  end
+```
 
 ## Installation
 
@@ -13,10 +28,6 @@ Install the gem and add to the application's Gemfile by executing:
 If bundler is not being used to manage dependencies, install the gem by executing:
 
     $ gem install abstract_method
-
-## Usage
-
-TODO: Write usage instructions here
 
 ## Development
 
