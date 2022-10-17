@@ -1,8 +1,9 @@
-# frozen_string_literal: true
-
 require_relative "abstract_method/version"
 
 module AbstractMethod
-  class Error < StandardError; end
-  # Your code goes here...
+  class AbstractMethodError < StandardError; end
+
+  def abstract_method(*msg)
+    raise AbstractMethodError.new(msg.empty? ? "Abstract method called" : msg.join(' '))
+  end
 end
