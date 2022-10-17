@@ -1,16 +1,16 @@
 # frozen_string_literal: true
 
-require_relative "lib/abstract_method/version"
+require_relative "lib/abstract_method_error/version"
 
 Gem::Specification.new do |spec|
-  spec.name = "abstract_method"
-  spec.version = AbstractMethod::VERSION
+  spec.name = "abstract_method_error"
+  spec.version = AbstractMethodError::VERSION
   spec.authors = ["Claus Rasmussen"]
   spec.email = ["claus.l.rasmussen@gmail.com"]
 
   spec.summary = "Provides Kernel#abstract_method"
   spec.description = "Lets you define abstract methods that raise when called"
-  spec.homepage = "https://github.com/clrgit/abstract_method"
+  spec.homepage = "https://github.com/clrgit/abstract_method_error"
 
   spec.metadata["homepage_uri"] = spec.homepage
 

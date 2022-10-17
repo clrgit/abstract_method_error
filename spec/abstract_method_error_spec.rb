@@ -1,7 +1,7 @@
 
-describe AbstractMethod do
+describe AbstractMethodError do
   it 'has a version number' do
-    expect(AbstractMethod::VERSION).not_to be_nil
+    expect(AbstractMethodError::VERSION).not_to be_nil
   end
 end
 

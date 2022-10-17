@@ -3,7 +3,7 @@
 
 # frozen_string_literal: true
 
-require "abstract_method"
+require "abstract_method_error"
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
