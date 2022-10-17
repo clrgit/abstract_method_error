@@ -8,11 +8,9 @@ Gem::Specification.new do |spec|
   spec.authors = ["Claus Rasmussen"]
   spec.email = ["claus.l.rasmussen@gmail.com"]
 
-  spec.summary = "Gem abstract_method"
-  spec.description = "Gem abstract_method"
-  spec.homepage = "http://www.nowhere.com/"
-  spec.required_ruby_version = ">= 2.6.0"
-
+  spec.summary = "Provides Kernel#abstract_method"
+  spec.description = "Lets you define abstract methods that raise when called"
+  spec.homepage = "https://github.com/clrgit/abstract_method"
 
   spec.metadata["homepage_uri"] = spec.homepage
 
