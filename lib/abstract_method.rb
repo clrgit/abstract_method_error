@@ -1,6 +1,6 @@
 require_relative "abstract_method/version"
 
-module AbstractMethod
+module Kernel
   class AbstractMethodError < StandardError; end
 
   def abstract_method(*msg)
